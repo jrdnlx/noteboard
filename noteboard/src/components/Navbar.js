@@ -1,21 +1,23 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/">
+          <Link class="navbar-brand" to="/">
             NoteBoard
-          </a>
+          </Link>
         </div>
         <ul class="nav navbar-nav">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/fav">Favourites</a>
+            <Link to="/favorites">Favorites</Link>
           </li>
           <li>
-            <a href="/movies">Movies</a>
+            <Link to="/movies">Movies</Link>
           </li>
         </ul>
       </div>
